@@ -12,6 +12,7 @@ La NASA vous a octroyé un contrat de programmation pour une procédure d'affich
 La procédure `main` fera une boucle en passant à la fonction `display` la valeur de 9 à 0.
 
 ### Affichage attendu :
+
 ```plaintext
 Attention: 9
 Attention: 8
@@ -26,65 +27,53 @@ Décollage !!!
 ```
 
 ### Règles à respecter :
+
+1. Effectuez le passage du paramètre (le chiffre du décompte) par la pile.
+2. Il est permis de continuer d'utiliser des variables globales pour les messages à afficher.
+
+## 🎲 Question 02 - Dice
+
+Créer un algorithme qui affichera le résultat d'un jet d'un dé à l'écran à chaque appuie de la touche d'espacement. L'algorithme se servira de la procédure `dice` qui retounera une valeur numérique aléatoire entre 1 et 6.
+
+```plaintext
+Vous avez obtenu un 6.
+```
+
+```plaintext
+Vous avez obtenu un 2.
+```
+
+```plaintext
+Vous avez obtenu un 1.
+```
+
 1. Effectuez le passage des paramètres par la pile.
 
-## 🎨 Question 02 - Pablo Picasso del Procedure
+## 📦 Question 03 - SKU Generator
 
-Demandez à l'utilisateur la taille du triangle à dessiner, entre 2 et 9.
-Dessinez le triangle demandé en utilisant les procédures suivantes :
-1. __print_char__ : affichage d'un caractère à l'écran.
-2. __print_line__ : affichage d'une ligne de caractères.
-3. __print_triangle__ : affichage complet du triangle.
-
-###### Affichage requis :
+Créer un algorithme qui affiche un SKU d'exactement 6 chiffres généré aléatoirement à chaque appuie de la touche d'espacement. Votre algorithme devra comporter une procédure `generate_sku` qui reçoit en paramètre l'emplacement où écrire le SKU généré. Cette procédure appelera à son tour la procédure `random` qui retounera aléatoirement une valeur numérique entre 0 et 9.
 
 ```plaintext
-Entrez la taille du triangle à dessiner [2 à 9] : 9
-*********
-********
-*******
-******
-*****
-****
-***
-**
-*
+SKU: 939485
 ```
 
 ```plaintext
-Entrez la taille du triangle à dessiner [2 à 9] : 2
-**
-*
+SKU: 002948
 ```
 
-### Règles à respecter :
+```plaintext
+SKU: 109586
+```
+
 1. Effectuez le passage des paramètres par la pile.
-2. Conservez chacune des procédures __pures__.
+2. Aucun accès direct aux variables globales ne doit être fait, seul l'adresse mémoire passé en paramètre au besoin.
+3. Conservez chacune des procédures **pures**.
 
-## ☀️ Question 03 - Bonne journée !
-
-Créez d'abord une procédure `greeting` qui prendra en paramètre uniquement un nom __(une chaîne de caractères)__ et qui souhaitera une bonne journée à cette personne. La procédure `greeting` appellera, en interne, la procédure `alpha_count`, responsable de retourner le nombre de caractères alphabétiques dans une chaîne de caractères.
-
-```plaintext
-Entrez votre nom : Cédrik
-Bonjour Cédrik, votre prénom contient 6 lettres !
-```
-
-```plaintext
-Entrez votre nom : Marie-Antoine
-Bonjour Marie-Antoine, votre prénom contient 12 lettres !
-```
-
-> Que remarquez-vous de différent avec Marie-Antoine qui fait que vous devrez probablement ajuster votre procédure de calcul du nombre de lettres d'une chaîne de caractères ?
-
-### Règles à respecter :
-1. Effectuez le passage des paramètres par la pile.
-2. Conservez chacune des procédures __pures__.
 
 ## ⚡ Question 04 - Power !
 
 Demandez une base (entre 1 et 9) ainsi qu'une puissance (entre 1 et 5) à l'utilisateur.
-Dans une procédure __power__, effectuez le calcul et retournez le résultat.
+Dans une procédure **power**, effectuez le calcul et retournez le résultat.
 Affichez ensuite le résultat dans le registre BX.
 
 ```plaintext
@@ -100,8 +89,10 @@ Entrez l'exposant : 5
 ```
 
 ### Règles à respecter :
+
 1. Effectuez le passage des paramètres par la pile.
-2. Conservez chacune des procédures __pures__.
+2. Aucun accès direct aux variables globales ne doit être fait, seul l'adresse mémoire passé en paramètre au besoin.
+3. Conservez chacune des procédures **pures**.
 
 ## ⚡⚡⚡ DÉFI Question 05 - SuperPower !
 
@@ -116,7 +107,9 @@ Résultat : 59049
 > ⚠️ Vous aurez besoin d'une procédure dédiée à l'affichage d'une valeur numérique à l'écran.
 
 ### Règles à respecter :
+
 1. Effectuez le passage des paramètres par la pile.
-2. Conservez chacune des procédures __pures__.
+2. Aucun accès direct aux variables globales ne doit être fait, seul l'adresse mémoire passé en paramètre au besoin.
+3. Conservez chacune des procédures **pures**.
 
 <hr><p align="Center"><img src="../../includes/end.png" alt="drawing" width="150"/></p>
