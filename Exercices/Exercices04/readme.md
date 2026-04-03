@@ -33,25 +33,22 @@ Décollage !!!
 
 ## 🎲 Question 02 - Dice
 
-Créer un algorithme qui affichera le résultat d'un jet d'un dé à l'écran à chaque appuie de la touche d'espacement. L'algorithme se servira de la procédure `dice` qui retounera une valeur numérique aléatoire entre 1 et 6.
+Créer un algorithme qui affichera le résultat d'un jet d'un dé à l'écran à chaque appuie de la touche d'espacement. L'algorithme se servira de la procédure `random` qui retounera une valeur numérique aléatoire entre 1 (paramètre `min`) et 6 (paramètre `max`).  L'appuie de la touche `ESC` terminera l'algorithme.
 
 ```plaintext
 Vous avez obtenu un 6.
-```
-
-```plaintext
 Vous avez obtenu un 2.
-```
-
-```plaintext
 Vous avez obtenu un 1.
+Vous avez obtenu un 3.
 ```
 
 1. Effectuez le passage des paramètres par la pile.
 
+> Astuce : Déclarez les contantes MIN et MAX en 16 bits afin d'être en mesure de les placer facilement sur la pile.
+
 ## 📦 Question 03 - SKU Generator
 
-Créer un algorithme qui affiche un SKU d'exactement 6 chiffres généré aléatoirement à chaque appuie de la touche d'espacement. Votre algorithme devra comporter une procédure `generate_sku` qui reçoit en paramètre l'emplacement où écrire le SKU généré. Cette procédure appelera à son tour la procédure `random` qui retounera aléatoirement une valeur numérique entre 0 et 9.
+Créer un algorithme qui affiche un SKU d'exactement 6 chiffres généré aléatoirement à chaque appuie de la touche d'espacement. Votre algorithme devra comporter une procédure `generate_sku` qui reçoit en paramètre l'emplacement où écrire le SKU généré. Cette procédure appelera à son tour la procédure `random` créée précédement.
 
 ```plaintext
 SKU: 939485
