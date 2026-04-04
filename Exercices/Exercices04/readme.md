@@ -48,6 +48,8 @@ Vous avez obtenu un 3.
 
 > 💡 Astuce : Déclarez les contantes MIN et MAX en 16 bits afin d'être en mesure de les placer facilement sur la pile.
 
+> 🏆 Mini Challenge : Faites en sorte que l'utilisateur puisse quitter le programme en appuyant sur `ESC`.
+
 ## 📦 Question 03 - SKU Generator
 
 Créer un algorithme qui affiche un SKU d'exactement 6 chiffres généré aléatoirement à chaque appuie de la touche d'espacement. Votre algorithme devra comporter une procédure `generate_sku` qui reçoit en paramètre l'emplacement où écrire le SKU généré. Cette procédure appelera à son tour la procédure `random` créée précédement.
@@ -62,6 +64,7 @@ SKU: 109586
 2. Aucun accès direct aux variables globales ne doit être fait, seul l'adresse mémoire passé en paramètre au besoin.
 3. Conservez chacune des procédures **pures**.
 
+> 🏆 Mini Challenge : Faites en sorte que l'utilisateur puisse quitter le programme en appuyant sur `ESC`.
 
 ## ⚡ Question 04 - Power !
 
