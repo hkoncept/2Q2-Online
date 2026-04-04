@@ -33,7 +33,7 @@ Décollage !!!
 
 ## 🎲 Question 02 - Dice
 
-Créer un algorithme qui affichera le résultat d'un jet d'un dé à l'écran à chaque appuie de la touche d'espacement. L'algorithme se servira de la procédure `random` qui retounera une valeur numérique aléatoire entre 1 (paramètre `min`) et 6 (paramètre `max`).  L'appuie de la touche `ESC` terminera l'algorithme.
+Créer un algorithme qui affichera le résultat d'un jet d'un dé à l'écran à chaque appuie de la touche d'espacement. L'algorithme se servira de la procédure `random` qui retounera une valeur numérique aléatoire. L'appuie de la touche `ESC` terminera l'algorithme.
 
 ```plaintext
 Vous avez obtenu un 6.
@@ -44,7 +44,9 @@ Vous avez obtenu un 3.
 
 1. Effectuez le passage des paramètres par la pile.
 
-> Astuce : Déclarez les contantes MIN et MAX en 16 bits afin d'être en mesure de les placer facilement sur la pile.
+> ⚠️ Avez-vous pensé à rendre votre procédure réutilisable en paramétrant les valeurs `min` et `max` ?
+
+> 💡 Astuce : Déclarez les contantes MIN et MAX en 16 bits afin d'être en mesure de les placer facilement sur la pile.
 
 ## 📦 Question 03 - SKU Generator
 
@@ -52,17 +54,11 @@ Créer un algorithme qui affiche un SKU d'exactement 6 chiffres généré aléat
 
 ```plaintext
 SKU: 939485
-```
-
-```plaintext
 SKU: 002948
-```
-
-```plaintext
 SKU: 109586
 ```
 
-1. Effectuez le passage des paramètres par la pile.
+1. Effectuez le passage des paramètres d'entrée par la pile.
 2. Aucun accès direct aux variables globales ne doit être fait, seul l'adresse mémoire passé en paramètre au besoin.
 3. Conservez chacune des procédures **pures**.
 
