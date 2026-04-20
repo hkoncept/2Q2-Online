@@ -43,6 +43,9 @@ Erreur lors de la fermeture du fichier !
 Chaque matin une entreprise reçoit de [nouveau produits](./includes/sku_20.dat) à charger en mémoire dans leur système de vente. et votre patron vous demande de charger les `sku` (toujours fixe de 6 caractères) en mémoire pour ensuite les afficher à l'écran sur 5 colonnes :
 
 ```plaintext
+**************************************
+         Liste des produits
+**************************************
 938475  093847  178493  000984  285745
 909374  829385  983746  984012  119863
 839485  102938  092847  983948  787364
@@ -57,6 +60,32 @@ Chaque matin une entreprise reçoit de [nouveau produits](./includes/sku_20.dat)
 
 Dans le monde de la programmation d'application, nous ne sommes jamais à l'abris des surprises. Les années ont passés et l'entreprise a prit beaucoup d'expension. Est-ce que le patron devra vous rappeler pour adapter votre code où il a survécu aux années ? Voici les [nouvelles données](./includes/sku_100.dat) journalière de l'entreprise.
 
-## Question 04 - À suivre...
+## Question 04
+Le propriétaire d'une entreprise nommée __ShaliExpress__ a besoin que ses employés puissent entrer des codes de produit (sku), un par ligne, dans un fichier nommé `sku.dat`.
+### Spécifications
 
+ - Le fichier doit se créer automatiquement s'il n'existe pas.
+ - Les __sku__ entrés doivent être validés à la saisie (6 chiffres seulement).
+ - La saisie se termine lors de l'appuie sur la touche ESC.
+ - Les __sku__ de la base de donnée s'affichent alors à l'écran en format 5 colonnes.
+ - Relancer le programme n'efface pas les sku précédents.
+
+### Affichage requis
+Ici il y avait déjà 15 __sku__ dans le fichier et un employé en entre 5 autres :
+```plaintext
+SKU : 098900
+SKU : 101010
+SKU : 879384
+SKU : 567398
+SKU : 789374
+SKU : [Touche ESC appuyée]  
+
+**************************************
+         Liste des produits
+**************************************
+938475  093847  178493  000984  285745
+909374  829385  983746  984012  119863
+839485  102938  092847  983948  787364
+098900  101010  879384  567398  789374
+```
 <hr><p align="Center"><img src="../../includes/end.png" alt="drawing" width="150"/></p>
