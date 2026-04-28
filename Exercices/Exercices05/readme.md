@@ -14,18 +14,23 @@
 
 Afin de pouvoir lire ou écrire dans un fichier, le système d'exploitation (Windows 11) doit donner la permission à l'application. Cette permission s'enregistre dans un **handle** qui représente en fait, un jeton d'accès exclusif au fichier. Cela bloque donc toutes les autres applications d'avoir accès à ce fichier tant que vous n'invalidez pas le jeton en fermant le fichier.
 
-Votre premier défi sera de créer une procédure `openfile` pure et réutilisable qui prendra en paramètre un nom de fichier et qui retournera un **handle** sur ce fichier avec les droits en lecture et en écriture. Si le fichier n'existe pas, il sera créé automatiquement. Pour toute autre erreur lors de l'ouverture ou de la création du fichier, un registre booléen nommé `CF` prendra la valeur `1` et un message d'erreur s'affichera à la console :
+Votre premier défi sera de créer une procédure `openfile` pure et réutilisable qui prendra en paramètre un nom de fichier et qui retournera un **handle** sur ce fichier avec les droits en lecture et en écriture. Si le fichier n'existe pas, il sera créé automatiquement. Pour toute autre erreur lors de l'ouverture ou de la création du fichier, rertournez simplement la valeur zéro dans le handle et gérer cette valeur dans le main :
 
 ```plaintext
+; Dans le main
 Erreur lors de l'ouverture du fichier !
 ```
 
 Pour terminer, dans le `main`, ajoutez-y un tout petit test d'assurance qualité de votre créativité afin de prouver que la procédure `openfile` fonctionne bien. Testez :
 
 1. L'ouverture correcte d'un fichier (existant ou non).
-2. L'impossibilité d'ouvrir un fichier déjà ouvert.
+2. L'impossibilité d'ouvrir un fichier à cause d'un erreur dans le passage de la valeur d'entrée.
 
-> Astuce: Si la procedure `openfile` échoue vous en serez informés avec la valeur `1` du registre `CF`.
+Pour ouvrir un fichier en lecture & écriture en C++ :
+```cpp
+#include <fstream>
+fstream file(filename, ios::app);
+```
 
 ## 🫡 Question 02 - Say Goodbye !
 
