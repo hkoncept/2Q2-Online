@@ -4,6 +4,7 @@
 # 🏋️‍♀️ Exercices 05 - Fichiers 🏋️‍♀️
 
 > Représentera votre travail pratique #2 (10%)
+
 <!--#
 #### 📝 Lien vers les [notes de cours](https://slides.com/hkoncept/2q2-04/fullscreen?token=LZDfz3yW) !
 -->
@@ -27,6 +28,7 @@ Pour terminer, dans le `main`, ajoutez-y un tout petit test d'assurance qualité
 2. L'impossibilité d'ouvrir un fichier à cause d'un erreur dans le passage de la valeur d'entrée.
 
 Pour ouvrir un fichier en lecture & écriture en C++ :
+
 ```cpp
 #include <fstream>
 fstream file(filename, ios::app);
@@ -56,12 +58,12 @@ Chaque matin une entreprise reçoit de [nouveau produits](./includes/sku_20.dat)
 909374  829385  983746  984012  119863
 839485  102938  092847  983948  787364
 098900  101010  879384  567398  789374
+**************************************
 ```
 
 > Nous présumons ici que les `sku` seront toujours fixés à 6 caractères.
 
-> ⚠️ Votre patron vous informe qu'il ne connaît pas le nombre de sku reçu par fichier de données.  Votre algorithme doit donc fonctionner aussi avec ces [données](./includes/sku_25.dat).
-
+> ⚠️ Votre patron vous informe qu'il ne connaît pas le nombre de sku reçu par fichier de données. Votre algorithme doit donc fonctionner aussi avec ces [données](./includes/sku_25.dat).
 
 ## BONUS ⚙️ Question 04 - SKU Loader
 
